@@ -1,15 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./skeleton.css">
 
-    
+    <link rel="stylesheet" href="./bus.css">
+
+    <title>Bus Ticket</title>
+</head>
+
+<body>
+    <h1>Bus travel widget</h1>
+    <div class="row">
+        <label class="col-4">Points</label>
+        <input class="col-8 points" type="number" placeholder="enter points">
+
+    </div>
+    <br>
+    <div>
+        <label for="regNums">Start location:</label>
+        <select name="regNums" class="regNums">
+            <option value="" disabled selected>Select your option</option>
+            <option value="khayelitsha">Khayelitsha</option>
+            <option value="dunoon">Dunoon</option>
+            <option value="mitchellsPlain">Mitchells Plain</option>
+        </select>
+    </div>
+    <p>Travel times:</p>
+    <div class="" >
+        <label class="">
+            <input type="radio" name="peakOrNoPeak" class="radioButtons" value="peak">
+            <span class="label-body">Peak</span>
+        </label>
+        <label class="">
+            <input type="radio" name="peakOrNoPeak" class="radioButtons" value="offPeak">
+            <span class="label-body">Off peak</span>
+        </label>
+        <div class="row">
+            <label class="col-6" for="checkbox">Return :</label><input type="checkbox" class="col-6 checkbox" name="checkbox" value="return">
+
+        </div>
+        <button class="calculateBtn">Calculate</button>
+    </div>
+    <h2>Calculaions</h2>
+    <div >
+        <label>Number of single trips:</label>
+        <textarea class="" type="number" placeholder="Display the number of trips"></textarea>
+        
+        <label>Price per trip(single):</label>
+        <textarea class="" type="number" placeholder="Display the price per trip"></textarea>
+        
+        <label>Number of return trips:</label>
+        <textarea class="" type="number" placeholder="Display the number of return trips"></textarea>
+     
+        <label>Price per trip(return):</label>
+        <textarea class="" type="number" placeholder="Display the price per trip"></textarea>
+
+    </div>
+
+
+
+
     <script src="./busFactory.js"></script>
     <script src="./busDOM.js"></script>
 </body>

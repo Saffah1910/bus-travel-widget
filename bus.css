@@ -1,0 +1,10 @@
+body{
+    background-color: #bbadff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.calculateBtn{
+    background-color: #4e148c;
+    color: #bbadff;
+}
