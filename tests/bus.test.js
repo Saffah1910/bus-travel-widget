@@ -57,15 +57,12 @@ describe("The Bus Ticket function", function () {
         it("if a odd number of single trips is made it should return how many return trips a user had taken", function () {
             let busTravel = BusTicket();
 
-
-            busTravel.singleTrip(40, "khayelitsha");
-            busTravel.singleTrip(40, "khayelitsha");
-            busTravel.singleTrip(40, "khayelitsha");
-
-
+            busTravel.returnTrip();
+            busTravel.returnTrip();
             busTravel.returnTrip();
 
-            assert.equal(2, busTravel.amountOfReturn());
+
+            assert.equal(3, busTravel.amountOfReturn());
         });
 
         it("should return how many price if return option is chosen", function () {

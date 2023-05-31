@@ -49,14 +49,9 @@ function BusTicket() {
     }
     function returnTrip() {
         //if the number of single trips is even it should divide the single trips by 2 else if it is odd????
-        if (numSingleTrip % 2 === 0) {
-
-        }
-        numReturnTrip = numSingleTrip / 2
+        numReturnTrip += 1
         pricesReturn = priceSingle *= 2;
-        // else if(numSingleTrip % 2 ==!0){
-        //     numReturnTrip = numSingleTrip /2 
-        // }
+     
 
     }
     function getReturnPrice() {
