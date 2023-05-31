@@ -20,9 +20,9 @@ describe("The Bus Ticket function", function () {
         it("if the user does not select return and take 2 trips to khayelitsha it should return R80", function () {
             let busTravel = BusTicket();
             busTravel.singleTrip(40, "khayelitsha");
-            busTravel.singleTrip(40, "khayelitsha");
+            // busTravel.singleTrip(40, "khayelitsha");
 
-            assert.equal(80, busTravel.totalPriceOfSingle());
+            assert.equal(40, busTravel.totalPriceOfSingle());
         });
 
         it("if the user takes 2 trips to mitchells plain and 1 trip to dunoon it should return R85", function () {

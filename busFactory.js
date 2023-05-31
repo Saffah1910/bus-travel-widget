@@ -19,18 +19,20 @@ function BusTicket() {
     // var peak = 0;
 
     function singleTrip(points, location) {
-        if (points >= 40 && location == "khayelitsha") {
+        if (points >= 40 && location === "khayelitsha") {
             numSingleTrip += 1;
             priceSingle += 40;
+            // priceSingle = 40
+            // numSingleTrip = points / priceSingle;
             return true
         }
-        if (points >= 25 && location == "dunoon") {
+        if (points >= 25 && location === "dunoon") {
             numSingleTrip += 1;
             priceSingle += 25;
             return true
 
         }
-        if (points >= 30 && location == "mitchellsPlain") {
+        if (points >= 30 && location === "mitchellsPlain") {
             numSingleTrip += 1;
             priceSingle += 30;
             return true
